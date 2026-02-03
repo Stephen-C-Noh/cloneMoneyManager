@@ -1,15 +1,15 @@
-import { Text, View } from "react-native";
+import { Button, View } from "react-native";
+import MonthlyTable from "./components/MonthlyTable";
 
 export default function Index() {
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <MonthlyTable />
+      <Button title="Alert" onPress={() => alert("Alert Button Pressed!")} />
     </View>
   );
 }

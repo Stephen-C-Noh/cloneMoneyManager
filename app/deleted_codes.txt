@@ -1,0 +1,22 @@
+
+            {month.weeks &&
+              month.weeks.map((week, weekIndex) => (
+                <View key={weekIndex} style={styles.weekRow}>
+                  {/* week date range */}
+                  <Text style={styles.weekDateRange}>{week.dateRange}</Text>
+
+                  {/* week amount */}
+                  <View style={styles.weekAmounts}>
+                    <Text style={styles.weekIncome}>
+                      $ {week.income.toFixed(2)}
+                    </Text>
+                    <Text style={styles.weekExpense}>
+                      $ {week.expense.toFixed(2)}
+                    </Text>
+                  </View>
+                  {/* Week total */}
+                  <Text style={styles.weekTotal}>
+                    $ {week.total.toFixed(2)}
+                  </Text>
+                </View>
+              ))}
