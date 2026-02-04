@@ -9,7 +9,7 @@ export default function TabsLayout() {
       screenOptions={{
         headerShown: false,
 
-        tabBarActiveTintColor: "#ff5a5f",   // red when selected
+        tabBarActiveTintColor: "#ff5a5f", // red when selected
         tabBarInactiveTintColor: "#b5b5b5", // grey when not
 
         tabBarStyle: {
@@ -41,7 +41,6 @@ export default function TabsLayout() {
         }}
       />
 
-      
       <Tabs.Screen
         name="stats"
         options={{

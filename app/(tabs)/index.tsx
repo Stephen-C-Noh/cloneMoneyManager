@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function TransactionsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Transactions Screen</Text>
+      <Text style={styles.text}>Transactions Screen - Test</Text>
     </View>
   );
 }

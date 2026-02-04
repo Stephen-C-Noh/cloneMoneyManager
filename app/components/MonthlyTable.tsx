@@ -21,13 +21,6 @@ interface WeeklyData {
 }
 
 export default function MonthlyTable() {
-  // Summary data (totals at the top)
-  const summaryData = {
-    totalIncome: 0.0,
-    totalExpense: 0.0,
-    total: 0.0,
-  };
-
   // Sample monthly data - you'll expand this in Milestone 5
   const monthlyData: MonthlyData[] = [
     {
@@ -124,31 +117,6 @@ export default function MonthlyTable() {
   ];
   return (
     <ScrollView style={styles.container}>
-      {/* Summary Cards */}
-      <View style={styles.summaryContainer}>
-        {/* Income Card */}
-        <View style={styles.summaryCard}>
-          <Text style={styles.summaryLabel}>Income</Text>
-          <Text style={styles.incomeText}>
-            {summaryData.totalIncome.toFixed(2)}
-          </Text>
-        </View>
-
-        {/* Expense Card */}
-        <View style={styles.summaryCard}>
-          <Text style={styles.summaryLabel}>Exp.</Text>
-          <Text style={styles.expenseText}>
-            {summaryData.totalExpense.toFixed(2)}
-          </Text>
-        </View>
-
-        {/* Total Card */}
-        <View style={styles.summaryCard}>
-          <Text style={styles.summaryLabel}>Total</Text>
-          <Text style={styles.totalText}>{summaryData.total.toFixed(2)}</Text>
-        </View>
-      </View>
-
       {/* Monthly List */}
       <View style={styles.monthlyList}>
         {monthlyData.map((month, index) => (

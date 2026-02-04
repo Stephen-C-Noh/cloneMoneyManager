@@ -2,7 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import React, { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function TransactionsScreen() {
+export default function Header() {
   const [activeTab, setActiveTab] = useState("Monthly");
   const [year, setYear] = useState(2025);
 
@@ -14,9 +14,7 @@ export default function TransactionsScreen() {
 
   return (
     <View style={styles.container}>
-
       <View style={styles.header}>
-
         {/* Top row: search icon + title + right icons */}
         <View style={styles.headerTopRow}>
           <TouchableOpacity>
@@ -38,13 +36,13 @@ export default function TransactionsScreen() {
         {/* Year row */}
         <View style={styles.yearContainer}>
           <TouchableOpacity onPress={prevYear}>
-            <Text style={styles.arrow}>{'<'}</Text>
+            <Text style={styles.arrow}>{"<"}</Text>
           </TouchableOpacity>
 
           <Text style={styles.year}>{year}</Text>
 
           <TouchableOpacity onPress={nextYear}>
-            <Text style={styles.arrow}>{'>'}</Text>
+            <Text style={styles.arrow}>{">"}</Text>
           </TouchableOpacity>
         </View>
       </View>
