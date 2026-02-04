@@ -1,21 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button, View } from "react-native";
+import Header from "../Header";
+import MonthlyTable from "../components/MonthlyTable";
 
-export default function TransactionsScreen() {
+export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Transactions Screen - Test</Text>
+    <View style={{ flex: 1 }}>
+      <Header />
+      <MonthlyTable />
+      <Button title="Alert" onPress={() => alert("Alert Button Pressed!")} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    fontSize: 18,
-    fontWeight: "500",
-  },
-});

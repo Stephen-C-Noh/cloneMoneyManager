@@ -89,7 +89,7 @@ export default function Header() {
 
 /* STYLES */
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#fff" },
+  container: { backgroundColor: "#fff" },
 
   /* Header */
   header: { paddingTop: 50, paddingHorizontal: 16, backgroundColor: "#fff" },
